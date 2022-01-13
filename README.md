@@ -1,5 +1,5 @@
 # AlmanaxHelper
-## Application d'aide pour la réalisation de stock d'Almanax sur Dofus
+## Application d'aide à la réalisation de stock d'Almanax sur Dofus
 
 Almanax Helper permet de faciliter la réalisation des stocks d'offrande pour la quête Almanax sur Dofus. Plusieurs fonctionnalité :
 
