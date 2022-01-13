@@ -27,4 +27,4 @@ La fênetre d'Almanax Helper s'ouvre et vous n'avez plus qu'à *"coller"* le nom
 
 ![](https://i.imgur.com/OhvhTvS.png)
 
-Les offrandes sont présentées dans cet ordre : **ressources > armes & équipements > consommables > autre**. Une couleur différente est associée à chacun des types d'offrande de façon à mieux percevoir quand il est nécessaire de changer d'HDV. 
+Les offrandes sont présentées dans cet ordre : **HDV ressources > HDV équipements > HDV consommables > Autre sans HDV**. Une couleur différente est associée à chacun des types d'offrande de façon à mieux percevoir quand il est nécessaire de changer d'HDV. 
