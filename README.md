@@ -4,7 +4,7 @@
 Almanax Helper permet de faciliter la réalisation des stocks d'offrande pour la quête Almanax sur Dofus. Plusieurs fonctionnalité :
 
 - Ajoute au presse-papier l'offrande à acheter
-- Application au premier plan pour éviter de devoir faire des ALT+TAB régulier
+- Application au premier plan pour éviter de devoir faire des ALT+TAB réguliers
 - Tri les offrandes par type d'offrande (*ressource, consommable, équipement*) ce qui permet de minimiser les aller-retours entre les différents HDV.
 - Les objets non-achetables (cf. objets de quêtes, objets à recette secrète, etc) sont regroupés dans le type *autre*.
 
