@@ -16,10 +16,7 @@ NBOFFRANDE = 365
 
 def Run():
     t1 = threading.Thread(target=DataAlmanax)
-
     t1.start()
-
-
 
 def ScriptDemarrage():
     print("Démarrage du scrapping ", end="", flush=True)
