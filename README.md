@@ -8,10 +8,10 @@ Almanax Helper permet de faciliter la réalisation des stocks d'offrande pour la
 - Tri les offrandes par type d'offrande (ressource, consommable, équipement) ce qui permet de minimiser les aller-retours entre les différents HDV.
 - Les objets non-achetables (cf. objets de quêtes, objets à recette secrette, etc) sont regroupés dans "autre"
 
-L'application utilise un fichier data_almanax.csv sous cette forme : DATE,QUANTITE,OFFRANDE,TYPE contenant les futures offrandes sur un an. Ce fichier est généré en scrappant le site du Krosmoz http://www.krosmoz.com/fr/almanax et en utilisant les fichiers equipements_dofus.txt, ressources_dofus.txt, consommables_dofus.txt et armes_dofus.txt, nécessaires à la catégorisation des offrandes.
+L'application crée un fichier data_almanax.csv contenant les futures offrandes jusqu'à un an maximum. Ce fichier est généré en scrappant le site du Krosmoz http://www.krosmoz.com/fr/almanax et en utilisant les fichiers equipements_dofus.txt, ressources_dofus.txt, consommables_dofus.txt et armes_dofus.txt, nécessaires à la catégorisation des offrandes.
 
 - Installation et lancement
-Il suffit simplement d'éxécuter la version la plus récente de almanax_helper_0.X.py. Veillez à ce que les fichiers equipements_dofus.txt, ressources_dofus.txt, consommables_dofus.txt, armes_dofus.txt soient présent dans le même dossier que le fichier python. 
+Il suffit simplement d'éxécuter la version la plus récente de almanax_helper_0.X.py. Veillez à ce que les quatre fichiers equipements_dofus.txt, ressources_dofus.txt, consommables_dofus.txt, armes_dofus.txt soient présent dans le même dossier que le fichier python. 
 
 En cas de dépendances manques, installez-les simplement avec "pip install NomDeLaDépendance" dans un Terminal
 
