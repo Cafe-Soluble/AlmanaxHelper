@@ -33,7 +33,6 @@ def DataAlmanax():
     aujourdhui = datetime.date.today()
     fichier = open("data_almanax.csv", "w")
     fichier.close()
-
     i = 0
     #while i < 365:
     while i < int(NBOFFRANDE):
@@ -45,7 +44,6 @@ def DataAlmanax():
         EcrireFichierAlmanax(aujourdhui, TupleAlmanax[0], TupleAlmanax[1], typeObjet, fichier)
         aujourdhui = DatePlusUnJour(aujourdhui)
         fichier.close()
-
 
 def ScrapAlmanax(url):
     htlm_code = urlopen(url).read().decode("utf-8")
@@ -68,7 +66,6 @@ def DatePlusUnJour(la_date):
 
     la_date = la_date + timedelta(days = 1)
     return la_date
-
 
 def ExisteDansFichier(objet_a_trouver, path_file):
 
@@ -117,7 +114,6 @@ def getLigne(file, n, sep=","):
     r = csv.reader(f, delimiter=sep)
     liste = list(r)
     f.close()
-
     if (n < len(liste)) and (n >= -len(liste)):
         res = liste[n]
     else:
@@ -135,7 +131,6 @@ def FaireUneListeFinale(liste_ressource, liste_equipement, liste_consommable, li
     for offrande in liste_autre:
         liste_offrande_finale.append(offrande)
     return liste_offrande_finale
-
 
 def offrande_voulu():
     # demander le nombre de jour d'almanax voulu
@@ -172,12 +167,7 @@ def offrande_voulu():
                 else:
                     print("ERREUR MOTHERFUCKER")
                     exit()
-
-            return FaireUneListeFinale(liste_offrande_ressources, liste_offrande_equipements, liste_offrande_consommables, liste_offrande_autres)
-
-
-
-
+            return FaireUneListeFinale(liste_offrande_ressources, liste_offrande_equipements, liste_offrande_consommables, liste_offrande_autres)    
         else:
             print("Erreur : le nombre doit être compris entre 1 et 365")
             exit()
@@ -192,11 +182,8 @@ def JourSuivant():
         print(liste_offrande[jour_actuel.get()])
         etat['text'] = str(liste_offrande[jour_actuel.get()][1]) + " x " + str(liste_offrande[jour_actuel.get()][2])
         label_subtitle['text'] = liste_offrande[jour_actuel.get()][3]
-
         ChangerCouleurFond(liste_offrande[jour_actuel.get()][3])
-
         PressePapierOffrande(liste_offrande[jour_actuel.get()][2])
-
     else:
         label_subtitle['text'] = ""
         etat['text'] = "Terminé."
@@ -208,15 +195,11 @@ def JourPrecedent():
         print(liste_offrande[jour_actuel.get()])
         etat['text'] = str(liste_offrande[jour_actuel.get()][1]) + " x " + str(liste_offrande[jour_actuel.get()][2])
         label_subtitle['text'] = liste_offrande[jour_actuel.get()][3]
-
         ChangerCouleurFond(liste_offrande[jour_actuel.get()][3])
-
         PressePapierOffrande(liste_offrande[jour_actuel.get()][2])
-
     else:
         etat['text'] = ""
         label_subtitle['text'] = "Start."
-
 
 def ChangerCouleurFond(type_offrande):
     if type_offrande == "ressource":
@@ -241,11 +224,9 @@ def AppliquerSurTouteLaFenetre(couleur):
     frame1['bg']=couleur
     frame2['bg']=couleur
 
-
 Run()
 ScriptDemarrage()
 liste_offrande = offrande_voulu()
-
 
 couleur_fond_ressource = '#c8e6bc'
 couleur_fond_equipement = '#c4f7fa'
@@ -253,7 +234,6 @@ couleur_fond_consommable = "#c7afd6"
 couleur_fond_autre = "#ede996"
 
 #--------------------- GUI --------------------
-
 
 window = Tk()
 window.wm_attributes("-topmost", 1)
@@ -277,7 +257,6 @@ print(liste_offrande[jour_actuel.get()])
 texte_etat = str(liste_offrande[jour_actuel.get()][1]) + " x " + str(liste_offrande[jour_actuel.get()][2]) #texte de base
 type_offrande= liste_offrande[jour_actuel.get()][3]
 
-
 window.title("ALMANAX HELPER"+version)
 window.geometry("600x200")
 window.minsize(200,75)
@@ -292,11 +271,8 @@ frame2=Frame(window, bg=couleur_fond_ressource)
 label_title = Label(frame1, text="Almanax Helper"+version, font=("Cute Letters", 35), bg=couleur_fond_ressource, fg="#0f0503")
 label_title.pack()
 
-
 label_subtitle = Label(frame1, text=type_offrande, font=("Cute Letters", 25), bg=couleur_fond_ressource, fg="#0f0503")
 label_subtitle.pack()
-
-
 
 etat=Label(frame1, text=texte_etat, font=("Cute Letters", 25), bg=couleur_fond_ressource, fg="#0f0503")
 etat.pack()
