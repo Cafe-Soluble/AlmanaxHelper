@@ -10,7 +10,7 @@ import re
 from html import unescape
 import threading
 
-version = "0.3"
+version = " 0.3"
 
 def Run():
     t1 = threading.Thread(target=DataAlmanax)
