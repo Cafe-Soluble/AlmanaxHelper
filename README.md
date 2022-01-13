@@ -6,7 +6,7 @@ Almanax Helper permet de faciliter la réalisation des stocks d'offrande pour la
 - Ajoute au presse-papier l'offrande à acheter
 - Application au premier plan pour éviter de devoir faire des ALT+TAB régulier
 - Tri les offrandes par type d'offrande (*ressource, consommable, équipement*) ce qui permet de minimiser les aller-retours entre les différents HDV.
-- Les objets non-achetables (cf. objets de quêtes, objets à recette secrette, etc) sont regroupés dans le type *autre*.
+- Les objets non-achetables (cf. objets de quêtes, objets à recette secrète, etc) sont regroupés dans le type *autre*.
 
 L'application crée un fichier data_almanax.csv contenant les futures offrandes jusqu'à un an maximum. Ce fichier est généré en scrappant le site du Krosmoz http://www.krosmoz.com/fr/almanax et en utilisant les fichiers **equipements_dofus.txt**, **ressources_dofus.txt**, **consommables_dofus.txt** et **armes_dofus.txt**, nécessaires à la catégorisation des offrandes.
 
