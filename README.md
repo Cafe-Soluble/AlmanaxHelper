@@ -19,9 +19,9 @@ NB: En cas de dépendances manquantes, installez-les simplement dans un Terminal
 > pip install NomDeLaDépendance 
 
 ## Utilisation
-Une console s'ouvre. Indiquez sur combien de jour vous voulez réaliser votre stock. 
+Une fenêtre s'ouvre. Indiquez sur combien de jour vous voulez réaliser votre stock. 
 
-![alt text](https://i.imgur.com/KqKKJXe.png)
+![alt text](https://i.imgur.com/ej0vkTD.png)
 
 La fênetre d'Almanax Helper s'ouvre et vous n'avez plus qu'à *"coller"* le nom de la ressource dans l'HDV. Il n'y a pas besoin de *"copier"* le nom de la ressource. L'offrande se retrouve directement dans le presse-papier chaque fois que vous cliquez sur le bouton "Jour suivant".
 
